@@ -152,21 +152,129 @@ p {
     100% { transform: rotate(2deg); }
 }
 
-#responserow {
+#responsegrid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 3vw;
     padding-bottom: 3vw;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
 }
 
 .response {
     display: flex;
-    flex: 13%;
-    max-width: 13%;
+    position: relative;
+    flex: 40%;
+    max-width: 40%;
     padding-left: 3vw;
     padding-right: 3vw;
+    height: 50%;
     object-fit: contain;
+    z-index: 2;
+}
+
+#box2 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    max-width: 33%;
+}
+
+#box3 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    max-width: 33%;
+    top: 10%;
+    left: 40%;
+}
+
+#box4 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    max-width: 33%;
+    left: 70%;
+}
+
+#box5 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    max-width: 33%;
+    top: 10%;
+}
+
+#box6 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    max-width: 33%;
+    left: 40%;
+}
+
+#box8 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    max-width: 33%;
+    top: 10%;
+    left: 60%;
+}
+
+#box9 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    max-width: 30%;
+    top: 30%;
+}
+
+#box10 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    max-width: 30%;
+    top: 20%;
+    left: 35%;
+}
+
+#box12 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    max-width: 30%;
+    top: 30%;
+    left: 60%;
+}
+
+#box13 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    max-width: 30%;
+    top: 30%;
+}
+
+#box14 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    max-width: 30%;
+    top: 30%;
+    left: 40%;
+}
+
+#box15 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    max-width: 30%;
+    top: 20%;
+    left: 65%;
 }
 
 .response img {
@@ -176,7 +284,7 @@ p {
     padding: 1rem;
 }
 
-.response:hover {
+.response img:hover {
     animation: shake 0.5s;
 }
 
@@ -196,7 +304,12 @@ p {
     background: white;
     padding: 1em 2em;
     border-radius: 4px;
+    height: 70%;
     overflow-y: scroll;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .popupclose {
@@ -206,8 +319,133 @@ p {
     color: black;
     font-size: 30px;
     text-decoration: none;
+    z-index: 1000;
 }
 
 .modal:target {
     display: flex;
 }
+
+@media ((min-width: 450px) and (max-width: 900px)) {
+    #responsegrid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        height: 70vh;
+    }
+}
+
+@media (max-width: 450px) {
+    #responsegrid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        height: 120vh;
+    }
+
+    .response {
+        display: flex;
+        position: relative;
+        flex: 90%;
+        max-width: 90%;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        height: 20%;
+        object-fit: contain;
+    }
+    
+    #box2 {
+        display: flex;
+        position: absolute;
+        max-width: 25%;
+    }
+    
+    #box3 {
+        display: flex;
+        position: absolute;
+        max-width: 25%;
+        top: 10%;
+        left: 30%;
+    }
+    
+    #box4 {
+        display: flex;
+        position: absolute;
+        max-width: 25%;
+        left: 60%;
+    }
+    
+    #box5 {
+        display: flex;
+        position: absolute;
+        max-width: 25%;
+        top: 20%;
+    }
+    
+    #box6 {
+        display: flex;
+        position: absolute;
+        max-width: 25%;
+        top: 10%;
+        left: 30%;
+    }
+    
+    #box8 {
+        display: flex;
+        position: absolute;
+        max-width: 25%;
+        top: 20%;
+        left: 60%;
+    }
+    
+    #box9 {
+        display: flex;
+        position: absolute;
+        max-width: 25%;
+        top: 30%;
+    }
+    
+    #box10 {
+        display: flex;
+        position: absolute;
+        max-width: 25%;
+        top: 20%;
+        left: 30%;
+    }
+    
+    #box12 {
+        display: flex;
+        position: absolute;
+        max-width: 25%;
+        top: 30%;
+        left: 60%;
+    }
+    
+    #box13 {
+        display: flex;
+        position: absolute;
+        max-width: 25%;
+        top: 40%;
+    }
+    
+    #box14 {
+        display: flex;
+        position: absolute;
+        max-width: 25%;
+        top: 40%;
+        left: 30%;
+    }
+    
+    #box15 {
+        display: flex;
+        position: absolute;
+        max-width: 25%;
+        top: 30%;
+        left: 60%;
+    }
+}
+  
