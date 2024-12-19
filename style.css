@@ -1,28 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
-
-:root {
-    --yellow-color: #f9f002;
-    --yellow-color-opacity: #f9f00242;
-    --orange-color: #ff9800;
-    --border-color: #8ae66e;
-    --red-color: #ff003c;
-    --pink-color: #ff3da1;
-    --blue-color: #0c5f74;
-    --green-color: #298d29;
-    --purple-color: purple;
-    --neon-color: #39ff14;
-    --black-color: #000;
-    --light-blue: #a6e1e9;
-    --light-blue2: #7eb5ed;
-    --white-color: #ffffff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Meow+Script&display=swap');
 
 body {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 /* loading animation */
@@ -69,6 +53,8 @@ body {
     }
 }
 
+/* background gradient */
+
 .background {
     display: none;
     background: linear-gradient(0deg, rgba(114, 164, 214,1) 0%, rgba(156, 231, 240,1) 100%);
@@ -96,8 +82,10 @@ h1 {
     font-size: 5rem;
     text-align: center;
     padding-top: 5vh;
-    color: var(--white-color);
+    color: white;
 }
+
+/* fairy lights */
 
 .lights {
     position: relative;
@@ -122,9 +110,12 @@ h1 {
 }
 
 p {
+    font-family: "Gaegu", serif;
     font-size: 1rem;
-    color: var(--black-color);
+    color: black;
 }
+
+/* polaroids */
 
 .polaroidgrid {
     display: grid;
@@ -151,6 +142,8 @@ p {
     80% { transform: rotate(-2deg); }
     100% { transform: rotate(2deg); }
 }
+
+/* reading responses */
 
 #responsegrid {
     display: flex;
@@ -181,6 +174,7 @@ p {
     position: absolute;
     z-index: 2;
     max-width: 33%;
+    left: 0%;
 }
 
 #box3 {
@@ -206,6 +200,7 @@ p {
     z-index: 2;
     max-width: 33%;
     top: 10%;
+    left: -10%;
 }
 
 #box6 {
@@ -213,7 +208,7 @@ p {
     position: absolute;
     z-index: 2;
     max-width: 33%;
-    left: 40%;
+    left: 30%;
 }
 
 #box8 {
@@ -305,6 +300,7 @@ p {
     padding: 1em 2em;
     border-radius: 4px;
     height: 70%;
+    width: 50%;
     overflow-y: scroll;
     z-index: 999;
     align-items: center;
@@ -316,7 +312,7 @@ p {
     position: absolute;
     top: 10px;
     right: 10px;
-    color: black;
+    color: #F8CA00;
     font-size: 30px;
     text-decoration: none;
     z-index: 1000;
@@ -399,7 +395,7 @@ p {
         position: absolute;
         max-width: 25%;
         top: 20%;
-        left: 60%;
+        left: 50%;
     }
     
     #box9 {
@@ -407,6 +403,7 @@ p {
         position: absolute;
         max-width: 25%;
         top: 30%;
+        left: 10%;
     }
     
     #box10 {
@@ -422,7 +419,7 @@ p {
         position: absolute;
         max-width: 25%;
         top: 30%;
-        left: 60%;
+        left: 55%;
     }
     
     #box13 {
